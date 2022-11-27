@@ -1,0 +1,255 @@
+.navbar {
+    height: 80px;
+    background-color: #DFE9F3;
+    transition: all 500ms;
+    z-index: 3;
+}
+
+.navegale{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbarItem {
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbarLink {
+    color: #6A7295;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.linki{
+    color: #fff;
+}
+
+.linea {
+    width: 70%;
+    height: 1px;
+    background-color: #6A7295;
+    margin-top: 10px;
+}
+
+.navbarItem:hover>.navbarLink {
+    color: #000;
+}
+
+.navbarItem:hover>.linea {
+    background-color: #000;
+}
+
+
+
+
+.footer {
+    height: 186px;
+    width: 100%;
+    background-color: #888EAA;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 20px 0 0 0;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoFooter {
+    position: relative;
+    bottom: 30px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-w,
+.icon-f {
+    position: relative;
+    font-size: 30px;
+    bottom: 10px;
+}
+
+.icon-w {
+    margin-top: 10px;
+    color: #00bb2d;
+}
+
+.icon-w:hover {
+    color: #25d366;
+}
+
+.p-footer {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 576px) { 
+
+    .navbar{
+        z-index: 3;
+    }
+
+    .navegale>.contenedorNav{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .navegale{
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .navegale>.contenedorNav>.navbar-collapse{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .navbar-collapse{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .footer {
+        height: 100%;
+        width: 100%;
+    }
+
+    .footer>.copyright{
+        position: relative;
+        top: 130px;
+    }
+
+    .footer>.sociales{
+        position: relative;
+        bottom: 130px;
+    }
+
+    .logoFooter {
+        bottom: 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    .navbar{
+        z-index: 3;
+    }
+
+    .navegale>.contenedorNav{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .navegale{
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .navegale>.contenedorNav>.navbar-collapse{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .navbar-collapse{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .footer {
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .footer>.copyright{
+        position: relative;
+        top: 130px;
+    }
+
+    .footer>.sociales>.links{
+        position: relative;
+        bottom: 100px;
+        text-align: start;
+    }
+
+    .footer>.sociales>.links>.p-footer{
+        margin-left: 20px;
+    }
+
+    .logoFooter {
+        bottom: 0px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){ 
+    .navbar{
+        z-index: 3;
+    }
+
+    .navegale>.contenedorNav{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .navegale{
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .navegale>.contenedorNav>.navbar-collapse{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .navbar-collapse{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .footer {
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .footer>.copyright{
+        position: relative;
+        top: 80px;
+        height: 30px;
+    }
+
+    .footer>.sociales{
+        position: relative;
+        bottom: 123px;
+        left: 50%;
+    }
+
+    .footer>.sociales>.links{
+        text-align: start;
+    }
+
+    .footer>.sociales>.links>.p-footer{
+        margin-left: 20px;
+    }
+
+    .logoFooter {
+        bottom: 0px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){ 
+    .footer {
+        height: 206px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-brand{
+        position: absolute;
+    }
+}

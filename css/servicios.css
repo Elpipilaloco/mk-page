@@ -1,0 +1,134 @@
+body {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    transition: all 1s;
+}
+
+.seccion1 {
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    height: 380px;
+    margin: 0 auto;
+    background-image: url('https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+
+.title {
+    position: relative;
+    bottom: 250px;
+    color: #fff;
+}
+
+.seccion2{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.serviciosItem {
+    text-align: center;
+    padding: 0%;
+    margin: 30px;
+    -webkit-box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.25);
+}
+
+.imgS2 {
+    width: 100%;
+    height: 260px;
+    margin: 0 auto;
+    background-image: url('https://images.pexels.com/photos/136351/pexels-photo-136351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.imgS2::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+
+.imgS2:hover::after {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.enlaceS2 {
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    color: #fff;
+    padding: 30px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.enlaceS2>h3 {
+    font-size: 50px;
+}
+
+.imgS2:hover>.enlaceS2 {
+    top: 43%;
+}
+
+.descripcion{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@media (max-width: 576px) { 
+    .enlaceS2{
+        font-size: 30px;
+    }
+
+    .enlaceS2>h3{
+        font-size: 40px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){ 
+    .serviciosItem{
+        margin: 10px;
+    }
+
+    .enlaceS2{
+        font-size: 30px;
+    }
+
+    .enlaceS2>h3{
+        font-size: 40px;
+    }
+}
+

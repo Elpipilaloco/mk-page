@@ -1,0 +1,404 @@
+body {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+}
+
+.seccion1 {
+    width: 100%;
+    background: #DFE9F3;
+    background: -webkit-linear-gradient(to bottom, #DFE9F3, #fff);
+    background: linear-gradient(to bottom, #DFE9F3, #fff);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.inicio{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.buttonInicio{
+    border: none;
+    background-color: #6A7295;
+    color: #fff;
+    padding: 8px 45px 8px 45px;
+    margin-top: 20px;
+}
+
+.seccion2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.imgS2{
+    right: 10%;
+    transition: all 1s;
+}
+
+.imgCambio{
+    right: 20%;
+    top: 80%;
+    z-index: 1;
+}
+
+.seccion3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.contactItem{
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 40px;
+    height: 350px;
+}
+
+.contactIcon{
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.fa-whatsapp{
+    color: #25d366;
+}
+
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-envelope{
+    color: rgb(170, 32, 32);
+}
+
+.contactType{
+    margin-top: 35px;
+    font-size: 26px;
+}
+
+.hrC{
+    margin: 0 30px 0 30px;
+}
+
+.contactInfo{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.seccion4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.grupo{
+    padding: 30px 150px 0 150px;
+}
+
+.tituloImg{
+    font-size: 50px;
+}
+
+.serviciosItem{
+    margin-top: 40px;
+}
+
+.imgS4{
+    width: 400px; 
+    height: 200px;
+    margin: 0 auto;
+    background-image: url('https://images.pexels.com/photos/14437082/pexels-photo-14437082.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.imgS4::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+}
+
+.imgS4:hover::after{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.enlaceS4{
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    color: #fff;
+    padding: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.imgS4:hover > .enlaceS4{
+    top: 45%;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #fff;
+    color: #000 !important;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 576px) { 
+
+    .seccion1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio{
+        width: 200px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .seccion1>img{
+        width: 300px;
+        margin-top: 60px;
+        height: auto;
+    }
+
+    .seccion2{
+        margin-top: 0px;
+        margin-bottom: 300px;
+    }
+
+    .imgS2{
+        width: 300px;
+        position: relative;
+    }
+
+    .imgCambio{
+        right: 20%;
+        top: 140%;
+        z-index: 1;
+    }
+
+    .seccion3{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        --bs-gutter-x: 0rem;
+    }
+
+    .seccion4{
+        width: 100%;
+    }
+
+    .grupo{
+        padding: 0;
+    }
+
+    .imgS4{
+        width: 300px; 
+        height: 200px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    .seccion1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio{
+        width: 200px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .seccion1>img{
+        width: 300px;
+        margin-top: 60px;
+        height: auto;
+    }
+
+    .seccion2{
+        margin-top: 50px;
+        margin-bottom: 400px;
+    }
+
+    .imgS2{
+        margin-top: 50px;
+        width: 350px;
+        position: relative;
+        right: 20%;
+    }
+
+    .imgCambio{
+        right: 30%;
+        top: 133%;
+        z-index: 1;
+    }
+
+    .seccion3{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        --bs-gutter-x: 0rem;
+    }
+
+    .contactItem{
+        width: 50%;
+        height: 350px;
+    }
+
+    .seccion4{
+        width: 100%;
+    }
+
+    .grupo{
+        padding: 0;
+    }
+
+    .imgS4{
+        width: 500px; 
+        height: 250px;
+    }
+
+    .enlaceS4{
+        font-size: 50px;
+    }
+
+    .enlaceS4>.me-3{
+        font-size: 50px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .seccion1>img{
+        width: 280px;
+        margin-top: 60px;
+        height: auto;
+    }
+
+    .seccion2{
+        margin-top: 50px;
+    }
+
+    .imgS2{
+        width: 350px;
+        position: relative;
+        right: 2%;
+    }
+
+    .imgCambio{
+        right: 8%;
+        top: 83%;
+        z-index: 1;
+    }
+
+    .seccion3{        
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        --bs-gutter-x: 0rem;
+    }
+
+    .contactItem{
+        width: 40%;
+        margin: 10px;
+        height: 350px;
+    }
+
+    .seccion4{
+        width: 100%;
+    }
+
+    .grupo{
+        padding: 0;
+    }
+
+    .imgS4{
+        width: 350px; 
+        height: 200px;
+    }
+
+    .enlaceS4{
+        font-size: 30px;
+    }    
+}
+
+@media (min-width: 992px) and (max-width: 1200px){ 
+    .seccion2{
+        margin-top: 50px;
+    }
+
+    .imgS2{
+        width: 350px;
+        position: relative;
+        right: 3%;
+    }
+
+    .imgCambio{
+        right: 8%;
+        top: 83%;
+        z-index: 1;
+    }
+
+    .seccion3{        
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        --bs-gutter-x: 0rem;
+    }
+
+    .contactItem{
+        width: 35%;
+        margin: 20px;
+        height: 350px;
+    }
+
+    .seccion4{
+        width: 100%;
+    }
+
+    .grupo{
+        padding: 0;
+    }
+
+    .imgS4{
+        width: 420px; 
+        height: 200px;
+    }
+
+    .enlaceS4{
+        font-size: 30px;
+    } 
+}

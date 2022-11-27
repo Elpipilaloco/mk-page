@@ -1,0 +1,52 @@
+body {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+}
+
+.main{
+    height: 66.2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.regr{
+    width: 20%;
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6A7295;
+    padding: 16px 0;
+    border-radius: 10px;
+}
+
+.regr:hover{
+    color: #fff;
+    background-color: #626a8a;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 44px;
+}
+
+@media (max-width: 576px) { 
+    .regr{
+        width: 60%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    .regr{
+        width: 60%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){ 
+    
+}
+
+@media (min-width: 992px) and (max-width: 1200px){ 
+
+}
