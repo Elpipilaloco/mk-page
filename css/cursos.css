@@ -63,24 +63,19 @@ body {
 }
 
 @media (max-width: 576px) { 
-    .imgS1{
-        height: 105vh;
-    }
-
     .desc{
         bottom: 0px;
         position: relative;
-        bottom: 100vh;
-        height: 100px;
+        height: 50px;
     }
 
     .desc>h1{
-        font-size: 25px;
+        font-size: 15vw;
         margin-bottom: 10px;
     }
     
     .desc>p{
-        font-size: 15px;
+        font-size: 18px;
         margin: 0 5px;
     }
 
@@ -110,12 +105,12 @@ body {
     }
 
     .desc>h1{
-        font-size: 25px;
+        font-size: 10vw;
         margin-bottom: 10px;
     }
     
     .desc>p{
-        font-size: 15px;
+        font-size: 17px;
         margin: 0 5px;
     }
 
@@ -145,12 +140,12 @@ body {
     }
 
     .desc>h1{
-        font-size: 25px;
+        font-size: 60px;
         margin-bottom: 10px;
     }
     
     .desc>p{
-        font-size: 15px;
+        font-size: 23px;
         margin: 0 5px;
     }
 

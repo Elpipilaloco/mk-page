@@ -109,11 +109,19 @@ a {
 
 @media (max-width: 576px) { 
     .enlaceS2{
-        font-size: 30px;
+        font-size: 10vw;
+    }
+
+    .calc1{
+        top: calc(8vw + 25%);
     }
 
     .enlaceS2>h3{
-        font-size: 40px;
+        font-size: 8vw;
+    }
+
+    .imgS2 {
+        height: 50vw;
     }
 }
 

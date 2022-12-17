@@ -9,6 +9,7 @@ body {
 
 .titulo{
     font-size: 60px;
+    text-align: center;
 }
 
 .imagenes{
@@ -59,6 +60,11 @@ hr{
 
 
 @media (max-width: 576px) { 
+    .titulo{
+        font-size: 50px;
+        text-align: center;
+    }
+
     .imagenes{
         margin-left: 20%;
     }
@@ -76,12 +82,20 @@ hr{
         margin: 20% 10% 0 10%;
     }
 
+    .moda{
+        font-size: 13vw;
+    }
+
     .info-cont{
         display: block;
     }
 
     .item-m{
-        margin-top: 50px;
+        margin: 50px 40px 0 40px;
+    }
+
+    .item-m>img{
+        width: 90vw;
     }
 }
 

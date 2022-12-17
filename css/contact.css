@@ -52,7 +52,35 @@ body {
     width: 100%;
 } 
 
-@media (max-width: 576px) { 
+@media (max-width: 350px) { 
+    .navbar{
+        margin-bottom: 10px;
+    }
+
+    .main {
+        margin: 0px 10px 10px 10px;
+        padding: 30px;
+    }
+    
+    .main>h1{
+        font-size: 30px;
+    }
+
+    .contactType{
+        font-size: 18px;
+    }
+
+    .contactIcon{
+        font-size: 34px;
+        margin: 0 10px 0 -10px;
+    }
+
+    .contactInfo{
+        width: 200px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 576px) { 
     .navbar{
         margin-bottom: 10px;
     }

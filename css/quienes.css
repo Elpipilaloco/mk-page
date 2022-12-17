@@ -57,8 +57,88 @@ body {
     right: 5%;
 }
 
+@media (max-width: 330px) { 
+    .seccion1>h1{
+        font-size: 20px;
+    }
 
-@media (max-width: 576px) { 
+    .seccion1>p{
+        margin: 20px 10px;
+        font-size: 15px;
+    }
+
+    .seccion2>h1{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .seccion2>.texto > p{
+        font-size: 15px;
+        margin: 0px 0px;
+    }
+
+    .seccion2>.texto{
+        margin-left: 10px;
+        margin-bottom: 150px;
+    }
+
+    .images{
+        margin: 0 0;
+        height: 200px;
+    }
+    
+    .img{
+        width: 200px;
+        position: relative;
+        display: block;
+    }
+
+    .cambio1:nth-child(1){
+        top: 0%;
+        right: -10%;
+    }
+
+    .cambio1:nth-child(2){
+        top: -193.33px;
+        right: -10%;
+    }
+
+    .cambio1:nth-child(3){
+        top: calc(-153.33px * 2);
+        right: -10%;
+    }
+
+    .cambio2:nth-child(1){
+        top: -45px;
+        right: -18%;
+    }
+
+    .cambio2:nth-child(2){
+        top: -145px;
+        right: -18%;
+    }
+
+    .cambio2:nth-child(3){
+        top: calc((-153.33px * 2) - 45px);
+        right: -18%;
+    }
+
+    .cambio3:nth-child(1){
+        top: 0px;
+        right: -15%;
+    }
+
+    .cambio3:nth-child(2){
+        top: -163.33px;
+        right: -15%;
+    }
+
+    .cambio3:nth-child(3){
+        bottom: calc(163.33px * 2);
+        right: -15%;
+    }
+}
+@media (min-width: 330px) and (max-width: 576px) { 
     .seccion1>h1{
         font-size: 20px;
     }

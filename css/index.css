@@ -189,26 +189,42 @@ a{
         margin-right: 0px;
     }
 
+    .title{
+        font-size: 12vw;
+    }
+
     .seccion1>img{
-        width: 300px;
+        width: 86vw;
         margin-top: 60px;
         height: auto;
     }
 
     .seccion2{
         margin-top: 0px;
-        margin-bottom: 300px;
+        margin-bottom: -100px;
+        text-align: center;
     }
 
     .imgS2{
-        width: 300px;
-        position: absolute;
+        width: 70vw;
+        position: relative;
     }
 
-    .imgCambio{
-        right: 20%;
-        top: 1170px;
+    .imgCambio:nth-child(1){
+        right: -16%;
+        top: 40px;
         z-index: 1;
+    }
+
+    .imgCambio:nth-child(2){
+        right: -16%;
+        top: calc(calc(-50vw/163) * 126);
+        z-index: 1;
+    }
+
+    .imgCambio1{
+        position: relative;
+        bottom: calc(calc(70vw/163) * 126);
     }
 
     .seccion3{
@@ -222,12 +238,16 @@ a{
         width: 100%;
     }
 
+    .tituloImg{
+        font-size: 12vw;
+    }
+
     .grupo{
         padding: 0;
     }
 
     .imgS4{
-        width: 300px; 
+        width: 80vw; 
         height: 200px;
     }
 }
@@ -404,3 +424,59 @@ a{
         font-size: 30px;
     } 
 }
+
+/* @media (max-width: 576px) { 
+
+    .seccion1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio{
+        width: 200px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .seccion1>img{
+        width: 300px;
+        margin-top: 60px;
+        height: auto;
+    }
+
+    .seccion2{
+        margin-top: 0px;
+        margin-bottom: 300px;
+    }
+
+    .imgS2{
+        width: 300px;
+        position: absolute;
+    }
+
+    .imgCambio{
+        right: 20%;
+        top: 1170px;
+        z-index: 1;
+    }
+
+    .seccion3{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        --bs-gutter-x: 0rem;
+    }
+
+    .seccion4{
+        width: 100%;
+    }
+
+    .grupo{
+        padding: 0;
+    }
+
+    .imgS4{
+        width: 300px; 
+        height: 200px;
+    }
+} */

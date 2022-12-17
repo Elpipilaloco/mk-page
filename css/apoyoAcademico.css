@@ -49,12 +49,16 @@ body {
     }
 
     .contenedor{
-        padding: 14px 30px;
+        padding: 14px 5vw;
         margin: 50px 0 70px 0;
     }
 
+    .contenedor>h2{
+        font-size: calc(4vw + 10px);
+    }
+
     .img-estudi{
-        width: 300px;
+        width: 95vw;
     }
 
     .principal{
